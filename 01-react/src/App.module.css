@@ -25,3 +25,8 @@
 .profile {
   line-height: 1.7;
 }
+
+.workItems {
+  display: flex;
+  flex-wrap: wrap;;
+}
