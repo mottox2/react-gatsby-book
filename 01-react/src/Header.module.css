@@ -11,15 +11,6 @@
   margin-right: 32px;
 }
 
-.siteName a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.siteName a:hover {
-  color: #663399;
-}
-
 .nav {
   display: flex;
   align-items: center;
@@ -28,11 +19,6 @@
 .navItem {
   margin-right: 20px;
   font-weight: bold;
-}
-
-.navItem a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .social {
