@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 a {
   color: inherit;
   text-decoration: none;
