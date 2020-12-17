@@ -1,7 +1,8 @@
 import styles from "./App.module.css";
 import Layout from "./Layout";
+import PostItem from "./PostItem";
 
-const App = () => {
+const App = (props) => {
   return (
     <Layout>
       <h2 className={styles.heading}>About</h2>
@@ -10,7 +11,9 @@ const App = () => {
         新規事業の爆速立ち上げや、使いやすいSPAの開発が得意です。
       </p>
       <h2 className={styles.heading}>Posts</h2>
-      <p>Hello Gatsby</p>
+      {props.posts.map((post) => {
+        return <PostItem post={post} key={post.title} />;
+      })}
       <h2 className={styles.heading}>Works</h2>
       <p>Hello Gatsby</p>
     </Layout>
