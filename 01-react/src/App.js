@@ -1,13 +1,8 @@
 import styles from "./App.module.css";
+import Layout from "./Layout";
 
 const App = () => {
-  return (
-    <div className={styles.container}>
-      <p className={styles.message}>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
-  );
+  return <Layout>Hello Gatsby</Layout>;
 };
 
 export default App;
