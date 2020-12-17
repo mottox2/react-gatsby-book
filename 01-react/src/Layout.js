@@ -5,10 +5,8 @@ const Layout = (props) => {
   return (
     <div className={styles.container}>
       <Header />
-      <main>
-        {props.children}
-      </main>
-      <footer>
+      <main>{props.children}</main>
+      <footer className={styles.footer}>
         <p className={styles.copyright}>&copy; 2020 つのぶえ出版</p>
       </footer>
     </div>
