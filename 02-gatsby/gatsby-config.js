@@ -11,5 +11,13 @@ module.exports = {
         name: `Qiita`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "works",
+        path: `${__dirname}/src/works.yaml`,
+      },
+    },
+    "gatsby-transformer-yaml",
   ],
 };
