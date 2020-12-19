@@ -1,0 +1,13 @@
+.container {
+  margin-bottom: 12px;
+}
+
+.date {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-right: 12px;
+}
+
+.title {
+  font-weight: bold;
+}
