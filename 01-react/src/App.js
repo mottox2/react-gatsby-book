@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import styles from "./App.module.css";
 import Layout from "./Layout";
 import PostItem from "./PostItem";
@@ -6,6 +7,10 @@ import WorkItem from "./WorkItem";
 const App = (props) => {
   return (
     <Layout>
+      <Helmet>
+        <title>My Site</title>
+        <meta name="description" content="My first react website" />
+      </Helmet>
       <h2 className={styles.heading}>About</h2>
       <p className={styles.profile}>
         都内でウェブサービスやスマホアプリを作るフロントエンドエンジニア・UIデザイナーです。
