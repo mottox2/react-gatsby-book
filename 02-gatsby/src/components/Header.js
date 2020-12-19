@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import styles from "./Header.module.css";
 
@@ -5,11 +6,11 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <h1 className={styles.siteName}>
-        <a href="/">My Site</a>
+        <Link to="/">My Site</Link>
       </h1>
       <ul className={styles.nav}>
         <li className={styles.navItem}>
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li className={styles.navItem}>
           <a href="#">Works</a>
