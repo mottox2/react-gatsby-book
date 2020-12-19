@@ -1,7 +1,17 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
+import Layout from "../../components/Layout";
 
 const WorkDetailPage = (props) => {
-  return <pre>{JSON.stringify(props.data, null, 2)}</pre>;
+  const work = props.data.worksYaml;
+  return (
+    <Layout>
+      <Helmet>
+        <title>{work.title}</title>
+      </Helmet>
+      <pre>{JSON.stringify(work, null, 2)}</pre>;
+    </Layout>
+  );
 };
 
 export default WorkDetailPage;
