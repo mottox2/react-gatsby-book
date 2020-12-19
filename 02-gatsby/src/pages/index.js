@@ -37,14 +37,14 @@ const IndexPage = (props) => {
 
 export const query = graphql`
   query MyQuery {
-    allFeedQiita {
+    allFeedQiita(limit: 3) {
       nodes {
         title
         link
-        pubDate
+        pubDate(formatString: "YYYY.MM.DD")
       }
     }
-    allWorksYaml {
+    allWorksYaml(limit: 4) {
       nodes {
         slug
         title
