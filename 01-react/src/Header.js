@@ -8,10 +8,10 @@ const Header = () => {
       </h1>
       <ul className={styles.nav}>
         <li className={styles.navItem}>
-          <a href="#">About</a>
+          <a href="/">About</a>
         </li>
         <li className={styles.navItem}>
-          <a href="#">Works</a>
+          <a href="/">Works</a>
         </li>
       </ul>
       <div className={styles.social}>
