@@ -19,6 +19,7 @@
     "fontsource-fira-sans": "^3.1.5",
     "gatsby": "^2.26.1",
     "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-source-microcms": "^1.0.1",
     "minireset.css": "^0.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
