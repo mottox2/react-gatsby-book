@@ -2,5 +2,5 @@ module.exports = {
   siteMetadata: {
     title: "03-microcms",
   },
-  plugins: [],
+  plugins: ["gatsby-plugin-react-helmet"],
 };

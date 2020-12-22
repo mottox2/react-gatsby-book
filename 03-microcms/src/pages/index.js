@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 
@@ -47,6 +48,13 @@ const posts = [
 const IndexPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Gatsby Blog</title>
+        <meta
+          name="description"
+          content="GatsbyとHeadless CMSを組み合わせて作るサンプルアプリケーションです。"
+        />
+      </Helmet>
       <PostList posts={posts} />
     </Layout>
   );

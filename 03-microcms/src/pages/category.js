@@ -1,6 +1,12 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
+
+const category = {
+  name: "開発",
+  description: "開発に関する記事です。",
+};
 
 const posts = [
   {
@@ -34,6 +40,10 @@ const posts = [
 const CategoryPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>{category.name}</title>
+        <meta name="description" content={category.description} />
+      </Helmet>
       <PostList posts={posts} />
     </Layout>
   );

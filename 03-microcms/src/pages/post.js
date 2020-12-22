@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import PostContent from "../components/PostContent";
 
@@ -19,6 +20,10 @@ const post = {
 const PostPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>{post.title}</title>
+        <meta name="description" content={`${post.title}`} />
+      </Helmet>
       <PostContent post={post} />
     </Layout>
   );
