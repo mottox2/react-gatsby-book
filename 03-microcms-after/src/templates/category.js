@@ -1,19 +1,16 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 
-const IndexPage = (props) => {
+const CategoryPage = (props) => {
+  const category = props.data.microcmsCategory;
   const posts = props.data.allMicrocmsPost.nodes;
   return (
     <Layout>
       <Helmet>
-        <title>Gatsby Blog</title>
-        <meta
-          name="description"
-          content="GatsbyとHeadless CMSを組み合わせて作るサンプルアプリケーションです。"
-        />
+        <title>{category.name}</title>
+        <meta name="description" content={category.description} />
       </Helmet>
       <PostList posts={posts} />
     </Layout>
@@ -21,8 +18,13 @@ const IndexPage = (props) => {
 };
 
 export const query = graphql`
-  query {
-    allMicrocmsPost {
+  query($slug: String!) {
+    microcmsCategory(slug: { eq: $slug }) {
+      slug
+      name
+      description
+    }
+    allMicrocmsPost(filter: { category: { slug: { eq: $slug } } }) {
       nodes {
         slug
         title
@@ -40,4 +42,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default CategoryPage;
