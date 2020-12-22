@@ -1,0 +1,49 @@
+
+.container {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.thumbnailWrapper {
+  min-width: 120px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F0FB;
+  border-radius: 4px;
+}
+
+.headContent {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: bold;
+  color: #663399;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.publishedAt {
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+.content {
+  line-height: 1.7;
+}
+
+.content p {
+  margin-bottom: 12px;
+}
