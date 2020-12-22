@@ -34,11 +34,7 @@ const Header = ({ siteTitle }) => {
           <Link to="/">{siteTitle}</Link>
         </h1>
         <div className={styles.social}>
-          <a
-            href="https://github.com/mottox2"
-            target="_blank"
-            referrer="noopener"
-          >
+          <a href="https://github.com/mottox2" target="_blank" rel="noreferrer">
             <img src="/github.png" width="32" height="32" alt="GitHub" />
           </a>
         </div>
