@@ -3,7 +3,6 @@ import styles from "./PostContent.module.css";
 
 const PostContent = (props) => {
   const { title, content, category, publishedAt, thumbnail } = props.post;
-  console.log(styles);
   return (
     <article>
       <div className={styles.container}>
