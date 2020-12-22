@@ -17,19 +17,6 @@ const posts = [
     },
   },
   {
-    slug: "figma",
-    title: "Figmaはいいぞ",
-    content: "<p>Figmaの良さが伝わると嬉しい。</p>",
-    publishedAt: "2020.12.22 23:11",
-    category: {
-      slug: "design",
-      name: "デザイン",
-    },
-    thumbnail: {
-      url: "/gatsby-icon.png",
-    },
-  },
-  {
     slug: "gatsby",
     title: "Gatsbyもいいぞ",
     content: "<p>Gatsbyを使うと爆速サイトができるからいいよ</p>",
@@ -44,7 +31,7 @@ const posts = [
   },
 ];
 
-const IndexPage = () => {
+const CategoryPage = () => {
   return (
     <Layout>
       <PostList posts={posts} />
@@ -52,4 +39,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default CategoryPage;
