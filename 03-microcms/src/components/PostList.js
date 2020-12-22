@@ -1,5 +1,5 @@
 import React from "react"
-import { PostCell } from "./PostCell"
+import PostCell from "./PostCell";
 
 const PostList = props => {
   return (

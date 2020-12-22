@@ -1,9 +1,3 @@
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0;
-  display: flex;
-}
 
 .header {
   margin-bottom: 36px;
@@ -11,7 +5,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   position: relative;
 }
-.header .container {
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
+  display: flex;
   padding: 16px 0;
   width: 100%;
   height: 72px;
@@ -22,7 +21,7 @@
   justify-content: space-between;
 }
 
-.header h1 {
+.title {
   font-size: 24px;
   font-family: "Fira Sans";
   text-align: center;
@@ -34,42 +33,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
-.header .categories {
+.title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.categories {
   display: flex;
   z-index: 2;
 }
 
-.header .category {
+.category {
   margin-right: 20px;
   font-size: 14px;
   font-weight: bold;
 }
 
-.header h1 a {
-  color: inherit;
+.category a {
   text-decoration: none;
+  color: inherit;
 }
 
-.header > img {
+.social {
   margin-left: auto;
+  z-index: 1;
 }
 
-.footer {
-  margin-top: 2rem;
-  font-size: 12px;
-  text-align: center;
-  border-top: 2px solid #ddd;
-  padding: 12px 0;
-}
-
-.layout-main {
-  width: 640px;
-}
-
-.layout-side {
-  width: 300px;
-  margin-left: auto;
+.social img {
+  display: block;
 }

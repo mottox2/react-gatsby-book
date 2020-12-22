@@ -1,38 +1,47 @@
 import { Link } from "gatsby";
 import React from "react";
+import styles from "./Header.module.css";
+
+const categories = [
+  {
+    slug: "dev",
+    name: "開発",
+  },
+  {
+    slug: "design",
+    name: "デザイン",
+  },
+  {
+    slug: "diary",
+    name: "雑記",
+  },
+];
 
 const Header = ({ siteTitle }) => {
-  const categories = [
-    {
-      slug: "dev",
-      name: "開発",
-    },
-    {
-      slug: "design",
-      name: "デザイン",
-    },
-    {
-      slug: "diary",
-      name: "雑記",
-    },
-  ];
-
   return (
-    <header className="header">
-      <div className="container">
-        <ul className="categories">
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <ul className={styles.categories}>
           {categories.map((category) => {
             return (
-              <li className="category" key={category.slug}>
-                {category.name}
+              <li className={styles.category} key={category.slug}>
+                <Link to={`/categories/${category.slug}`}>{category.name}</Link>
               </li>
             );
           })}
         </ul>
-        <img src="/github.png" width="32" height="32" alt="GitHub" />
-        <h1 style={{ margin: 0 }}>
+        <h1 className={styles.title}>
           <Link to="/">{siteTitle}</Link>
         </h1>
+        <div className={styles.social}>
+          <a
+            href="https://github.com/mottox2"
+            target="_blank"
+            referrer="noopener"
+          >
+            <img src="/github.png" width="32" height="32" alt="GitHub" />
+          </a>
+        </div>
       </div>
     </header>
   );
