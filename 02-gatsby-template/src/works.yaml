@@ -1,0 +1,28 @@
+- slug: writing
+  title: 『執筆DAYS』リニューアル
+  imageUrl: '/work.png'
+  roles:
+  - WordPress
+  - React
+  description: |-
+    執筆の日々。
+    ゴールが見えないのが辛いです。
+- slug: deadline
+  title: 『締め切りTU-RYDAY』
+  imageUrl: '/work.png'
+  roles:
+  - React
+  - Gatsby
+  - Figma
+  description: |-
+    締め切りは減るだけで増えません。
+    おかしくないですか？
+- slug: bluebird
+  title: 『ブルーバードコミックス』サービスサイト
+  imageUrl: '/work.png'
+  roles:
+  - React
+  - Next.js
+  description: |-
+    作業中にちらつく青い鳥。
+    なぜつぶやいてしまうのか。
