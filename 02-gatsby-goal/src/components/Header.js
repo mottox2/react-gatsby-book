@@ -13,7 +13,7 @@ const Header = () => {
           <Link to="/about">About</Link>
         </li>
         <li className={styles.navItem}>
-          <a href="#">Works</a>
+          <a href="/">Works</a>
         </li>
       </ul>
       <div className={styles.social}>
