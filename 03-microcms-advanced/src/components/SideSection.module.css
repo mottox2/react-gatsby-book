@@ -1,0 +1,16 @@
+.container {
+  border-radius: 4px;
+  background-color: #FFFAFD;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: #67308E;
+  font-family: Fira Sans;
+  font-size: 14px;
+}
+
+.content {
+  margin-top: 12px;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "03-microcms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "03-microcms",
+  "author": "mottox2",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "fontsource-fira-sans": "^3.1.5",
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-source-microcms": "^1.0.1",
+    "minireset.css": "^0.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  }
+}

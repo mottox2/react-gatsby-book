@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
+  display: flex;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 12px;
+  text-align: center;
+  border-top: 2px solid #ddd;
+  padding: 12px 0;
+}
+
+.mainPane {
+  width: 640px;
+}
+
+.sidePane {
+  width: 300px;
+  margin-left: auto;
+}
+
+.profileText {
+  font-size: 12px;
+}
