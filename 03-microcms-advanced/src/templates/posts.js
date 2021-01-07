@@ -3,9 +3,11 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
+import Pagination from "../components/Pagination";
 
-const IndexPage = (props) => {
+const PostsPage = (props) => {
   const posts = props.data.allMicrocmsPost.nodes;
+  const { currentPage, numPages } = props.pageContext;
   return (
     <Layout>
       <Helmet>
@@ -16,13 +18,18 @@ const IndexPage = (props) => {
         />
       </Helmet>
       <PostList posts={posts} />
+      <Pagination
+        currentPage={currentPage}
+        numPages={numPages}
+        basePath={"/"}
+      />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query {
-    allMicrocmsPost {
+  query PostsQuery($skip: Int!, $limit: Int!) {
+    allMicrocmsPost(skip: $skip, limit: $limit) {
       nodes {
         slug
         title
@@ -40,4 +47,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default PostsPage;
