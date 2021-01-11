@@ -1,0 +1,16 @@
+.container {
+  max-width: 772px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 14px;
+  opacity: 0.6;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer {
+  margin-top: 48px;
+}
