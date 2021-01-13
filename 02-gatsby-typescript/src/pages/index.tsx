@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import PostItem from "../components/PostItem";
 import WorkItem from "../components/WorkItem";
 
-const IndexPage = (props: PageProps<any>) => {
+const IndexPage = (props: PageProps<GatsbyTypes.IndexPageQuery>) => {
   const { allFeedQiita, allWorksYaml } = props.data;
   return (
     <Layout>
@@ -34,7 +34,7 @@ const IndexPage = (props: PageProps<any>) => {
 };
 
 export const query = graphql`
-  query MyQuery {
+  query IndexPage {
     allFeedQiita(limit: 3) {
       nodes {
         title

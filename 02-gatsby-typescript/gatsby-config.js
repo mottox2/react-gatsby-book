@@ -19,5 +19,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-yaml",
+    "gatsby-plugin-typegen",
   ],
 };

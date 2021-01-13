@@ -3,8 +3,8 @@ import { graphql, PageProps } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../../components/Layout";
 
-const WorkDetailPage = (props: PageProps<any>) => {
-  const work = props.data.worksYaml;
+const WorkDetailPage = (props: PageProps<GatsbyTypes.WorkDetailQuery>) => {
+  const work = props.data.worksYaml!;
   return (
     <Layout>
       <Helmet>
@@ -18,7 +18,7 @@ const WorkDetailPage = (props: PageProps<any>) => {
 export default WorkDetailPage;
 
 export const query = graphql`
-  query($id: String!) {
+  query WorkDetail($id: String!) {
     worksYaml(id: { eq: $id }) {
       slug
       title
