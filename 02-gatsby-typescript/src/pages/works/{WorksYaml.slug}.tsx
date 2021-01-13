@@ -3,7 +3,9 @@ import { graphql, PageProps } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../../components/Layout";
 
-const WorkDetailPage = (props: PageProps<GatsbyTypes.WorkDetailQuery>) => {
+const WorkDetailPage: React.FC<PageProps<GatsbyTypes.WorkDetailQuery>> = (
+  props
+) => {
   const work = props.data.worksYaml!;
   return (
     <Layout>

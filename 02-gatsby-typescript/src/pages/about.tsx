@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import styles from "./about.module.css";
 import Layout from "../components/Layout";
 
-const AboutPage = () => {
+const AboutPage: React.FC = () => {
   return (
     <Layout>
       <Helmet>

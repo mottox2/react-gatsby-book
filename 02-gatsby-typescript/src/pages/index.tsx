@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import PostItem from "../components/PostItem";
 import WorkItem from "../components/WorkItem";
 
-const IndexPage = (props: PageProps<GatsbyTypes.IndexPageQuery>) => {
+const IndexPage: React.FC<PageProps<GatsbyTypes.IndexPageQuery>> = (props) => {
   const { allFeedQiita, allWorksYaml } = props.data;
   return (
     <Layout>
