@@ -4,7 +4,7 @@ import styles from "./PostCell.module.css";
 
 const PostCell = (props) => {
   const { title, content, category, publishedAt, slug, thumbnail } = props.post;
-  const plainContent = content.replace(/(<([^>]+)>)/gi, "");
+  const plainContent = (content || "").replace(/(<([^>]+)>)/gi, "");
   return (
     <Link to={`/posts/${slug}`} className={styles.container}>
       <div className={styles.thumbnailWrapper}>
