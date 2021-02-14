@@ -9,24 +9,8 @@ exports.createPages = async ({ actions, graphql }) => {
           slug
         }
       }
-      allMicrocmsCategory {
-        nodes {
-          slug
-        }
-      }
     }
   `);
-  const categories = result.data.allMicrocmsCategory.nodes;
-
-  categories.map((category) => {
-    createPage({
-      path: `categories/${category.slug}`,
-      component: path.resolve("./src/templates/category.js"),
-      context: {
-        slug: category.slug,
-      },
-    });
-  });
 
   const posts = result.data.allMicrocmsPost.nodes;
   const postsPerPage = 1;
