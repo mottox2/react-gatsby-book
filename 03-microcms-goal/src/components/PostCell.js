@@ -11,7 +11,7 @@ const PostCell = (props) => {
         <img src={thumbnail?.url} alt={title} />
       </div>
       <div className={styles.content}>
-        {/* <p className={styles.category}>{category.name}</p> */}
+        <p className={styles.category}>{category.name}</p>
         <div className={styles.title}>{title}</div>
         <p className={styles.description}>{plainContent}</p>
         <time className={styles.publishedAt}>{publishedAt}</time>
