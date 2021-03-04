@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./PostItem.module.css";
+import * as styles from "./PostItem.module.css";
 
 const PostItem = (props) => {
   const { title, pubDate, link } = props.post;

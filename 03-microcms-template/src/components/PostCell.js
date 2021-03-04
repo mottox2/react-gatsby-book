@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styles from "./PostCell.module.css";
+import * as styles from "./PostCell.module.css";
 
 const PostCell = (props) => {
   const { title, content, category, publishedAt, slug, thumbnail } = props.post;

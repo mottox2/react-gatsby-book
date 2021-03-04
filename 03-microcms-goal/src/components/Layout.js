@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./Header";
 import "minireset.css";
 import "fontsource-fira-sans/700-italic.css";
-import styles from "./Layout.module.css";
+import * as styles from "./Layout.module.css";
 import SideSection from "./SideSection";
 
 const Layout = ({ children }) => {

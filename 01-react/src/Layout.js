@@ -1,4 +1,4 @@
-import styles from "./Layout.module.css";
+import * as styles from "./Layout.module.css";
 import Header from "./Header";
 
 const Layout = (props) => {

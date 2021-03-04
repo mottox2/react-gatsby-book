@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styles from "./WorkItem.module.css";
+import * as styles from "./WorkItem.module.css";
 
 const WorkItem = (props) => {
   const { slug, title, roles, imageUrl } = props.work;

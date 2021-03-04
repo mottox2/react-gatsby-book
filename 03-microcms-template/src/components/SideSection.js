@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./SideSection.module.css"
+import * as styles from "./SideSection.module.css";
 
 const SideSection = (props) => {
   const { title, children } = props;

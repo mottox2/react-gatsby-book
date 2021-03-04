@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import styles from "./about.module.css";
+import * as styles from "./about.module.css";
 import Layout from "../components/Layout";
 
 const AboutPage = (props) => {

@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import * as React from "react";
 
 const Pagination = (props) => {
-  const { currentPage, numPages, basePath } = props;
+  const { currentPage, numPages, basePath = "/" } = props;
   const prevPath =
     currentPage === 2 ? basePath : `${basePath}page/${currentPage - 1}`;
   return (

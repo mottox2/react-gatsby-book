@@ -18,11 +18,7 @@ const PostsPage = (props) => {
         />
       </Helmet>
       <PostList posts={posts} />
-      <Pagination
-        currentPage={currentPage}
-        numPages={numPages}
-        basePath={"/"}
-      />
+      <Pagination currentPage={currentPage} numPages={numPages} />
     </Layout>
   );
 };

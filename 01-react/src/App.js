@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import styles from "./App.module.css";
+import * as styles from "./App.module.css";
 import Layout from "./Layout";
 import PostItem from "./PostItem";
 import WorkItem from "./WorkItem";

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql, PageProps } from "gatsby";
 import { Helmet } from "react-helmet";
-import styles from "./index.module.css";
+import * as styles from "./index.module.css";
 import Layout from "../components/Layout";
 import PostItem from "../components/PostItem";
 import WorkItem from "../components/WorkItem";

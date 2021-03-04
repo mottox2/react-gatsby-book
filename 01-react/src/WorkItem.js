@@ -1,4 +1,4 @@
-import styles from "./WorkItem.module.css";
+import * as styles from "./WorkItem.module.css";
 
 const WorkItem = (props) => {
   const { title, roles, imageUrl } = props.work;

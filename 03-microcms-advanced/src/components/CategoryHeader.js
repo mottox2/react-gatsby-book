@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SideSection.module.css";
+import * as styles from "./SideSection.module.css";
 
 const CategoryHeader = (props) => {
   const { title, children } = props;
