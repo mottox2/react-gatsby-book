@@ -17,11 +17,11 @@
   "license": "0BSD",
   "dependencies": {
     "fontsource-fira-sans": "^3.1.5",
-    "gatsby": "^2.26.1",
-    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-react-helmet": "^4.0.0",
     "minireset.css": "^0.0.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
   }
 }
